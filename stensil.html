@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footerrow{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000000;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgba(0, 255, 208, 0.623);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 10px;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Light.ttf)
+}
+
+
+.header a {
+  float: left;
+  color: rgba(0, 255, 208, 0.623);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px; 
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: Poppins;
+}
+
+
+.header a.logo {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: normal;
+  font-family: Poppins;
+
+
+}
+
+
+.header-right {
+  float: right;
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 70px;
+}
+
+
+hr.solid {
+    border-top: 1px solid white;
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+h3{
+  color: #000000;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+      <a href="file:///E:/vs%20code/Knewy/docs/index.html" class="logo">Knewy</a> 
+  </div>
+  
+  <div class="header-right">
+    <a class="active" href="file:///E:/vs%20code/Knewy/docs/index.html">Home</a>
+    <a href="https://medium.com/">Blog</a>
+    <a href="file:///E:/vs%20code/Knewy/resources.html">Resources</a>
+    <a href="volenteer.html">Volenteer</a>
+  </div>
+</div>
+
+
+<div class="vl"></div>
+
+<hr class="solid">
+
+<footer class="footer">
+  <div class="container">
+    <div class="footerrow">
+      <div class="footer-col">
+        <h4>Knewy</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Find Tutors</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Volenteer</a></li>
+          <li><a href="#">Donations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Internships</a></li>
+          <li><a href="#">Donations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Play a game</h4>
+        <ul>
+          <li><a href="#">game1</a></li>
+          <li><a href="#">game2</a></li>
+          <li><a href="#">game3</a></li>
+          <li><a href="#">game4</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
