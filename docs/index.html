@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+* {box-sizing: border-box;}
+
+
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footerrow{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000000;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgba(0, 255, 208, 0.623);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 10px;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: PoppinsM;
+  src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PoppinsSB;
+  src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  padding: 10px;
+}
+
+.header a {
+  float: left;
+  color: rgba(0, 255, 208, 0.623);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px; 
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: Poppins;
+}
+
+
+.header a.logo {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: normal;
+  font-family: Poppins;
+
+
+
+}
+
+
+.header-right {
+  float: right;
+}
+
+div.a {
+  font-family: PoppinsSB;
+  color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  line-height: 90%;
+  font-size: 50px;
+
+}
+
+div.b{
+  font-family: PoppinsM;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+.exclam{
+  font-family: PoppinsM;
+  color: rgba(0, 255, 208, 0.623);
+  text-align: center;
+  font-size: 40px;
+}
+
+div.c{
+  font-family: PoppinsM;
+  color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.theg{
+  font-family: PoppinsM;
+  color: rgba(0, 255, 208, 0.623);
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+div.d{
+  font-family: PoppinsM;
+  color: white;
+  padding-left: 50px;
+  font-size: 20px;
+  padding-top: 10px;
+
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+  
+  hr.solid {
+    border-top: 1px solid white;
+    
+  }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+      <a href="index.html" class="logo">Knewy</a> 
+  </div>
+  
+  <div class="header-right">
+    <a class="active" href="file:///E:/vs%20code/Knewy/docs/index.html">Home</a>
+    <a href="https://medium.com/">Blog</a>
+    <a href="file:///E:/vs%20code/Knewy/resources.html">Resources</a>
+    <a href="https://medium.com/">Volenteer</a>
+  </div>
+</div>
+
+<div class="a">Look Who's Discovered <br>
+  A Gold Mine <span class="exclam"> ! </span> </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="E:\vs code\Knewy\images\slide1.png" alt="slide1" style="width:100%">
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="E:\vs code\Knewy\images\slide4.png" alt="slide4" style="width:100%">
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="E:\vs code\Knewy\images\slide3.png" alt="slide3" style="width:100%">
+      </div>
+    </div>
+    
+  </div>
+<div class="b">Don't Worry <span class="exclam"> ! </span> </div>
+
+<div class="c">All the tutors are <span class="theg">verified</span> .</div>
+<div class="d">Like literally all of them.<br>In case...<br>That’s not possible. Promise!</div>
+
+<div class="c">Updates are <span class="theg">double checked</span> .</div>
+<div class="d">we dont pay our interns <br>to triple check sometimes.</div>
+
+<div class="c">Resource page with <span class="theg">Right Answers</span> .</div>
+<div class="d">Now that’s True.<br>You can mark it.<br>No doubt at all.</div>
+
+<div class="c">Want to be a <span class="theg">Influencer or Teacher</span> ?</div>
+<div class="d">Help us educate INDIA. <br> Make videos explaning a topic.<br>Change lives of thousands of children !</div>
+
+
+<div class="vl"></div>
+
+<hr class="solid">
+
+<footer class="footer">
+  <div class="container">
+    <div class="footerrow">
+      <div class="footer-col">
+        <h4>Knewy</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Find Tutors</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Volenteer</a></li>
+          <li><a href="#">Donations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Internships</a></li>
+          <li><a href="#">Donations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Play a game</h4>
+        <ul>
+          <li><a href="#">game1</a></li>
+          <li><a href="#">game2</a></li>
+          <li><a href="#">game3</a></li>
+          <li><a href="#">game4</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
